@@ -1,0 +1,85 @@
+
+
+.bgWrap {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bgText {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: center;
+  padding-top: 40vh;
+  text-shadow: 1px 1px 1px #3c5c5e;
+}
+
+.homeBg {
+  height: 70vh;
+  width: 100vw;
+  padding: 16%;
+  display: flex;
+  align-items: center;
+}
+
+.homeIntro {
+  width: 50%;
+}
+
+.homeExternal {
+  margin-top: 16px;
+}
+
+.homeExternal span {
+  font-size: 14px;
+  margin-right: 16px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem;
+}
+
+.footer div {
+  text-align: center;
+}
+
+.lgit {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.kofi {
+  margin-top: 16px;
+}
+
+.underline {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+.underline:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: -5px;
+  background: #000;
+  height: 2px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
