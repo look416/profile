@@ -24,9 +24,9 @@ const Home: NextPage = () => {
       <main>
         <div className={styles.homeBg}>
           <div className={styles.homeIntro}>
-            <h1>Hi, I'm Danny Teo</h1>
+            <h1>Hi, I&apos;m Danny Teo</h1>
             <h3>
-              I'm a software developer, loving backend techs, currently based in
+              I&apos;m a software developer, loving backend techs, currently based in
               Malaysia.
             </h3>
             <div className={styles.homeExternal}>
@@ -41,8 +41,8 @@ const Home: NextPage = () => {
       </main>
       <footer className={styles.footer}>
         <div>
-          <h1 className={styles.lgit}>Let's Get In Touch</h1>
-          <Link href="mailto:dannyteo1@outlook.com">
+          <h1 className={styles.lgit}>Let&apos;s Get In Touch</h1>
+          <Link href="mailto:dannyteo1@outlook.com" passHref>
             <Button rightIcon={<MdEmail />} colorScheme="pink" size="lg">
               Say Hello
             </Button>
