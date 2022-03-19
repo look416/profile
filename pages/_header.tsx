@@ -22,7 +22,7 @@ const links = [
 
 function NavList(props: any) {
   return (
-    <Link href={props.link}>
+    <Link href={props.link} passHref>
       <span className={styles.underline}>{props.name}</span>
     </Link>
   );

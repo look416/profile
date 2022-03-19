@@ -31,11 +31,9 @@ const Home: NextPage = () => {
             </h3>
             <div className={styles.homeExternal}>
               {externals.map((external, index) => (
-                <span key={index}>
-                  <a className={styles.underline} href={external.link}>
-                    {external.name}
-                  </a>
-                </span>
+                <Link href={external.link} key={index} passHref>
+                  <span className={styles.underline}>{external.name}</span>
+                </Link>
               ))}
             </div>
           </div>
